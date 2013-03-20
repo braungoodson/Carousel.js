@@ -18,12 +18,12 @@ var Carousel = function (imageNames,container) {
 	}
 }
 
-// Initially show an image.
+// Show an image.
 Carousel.prototype.showImage = function () {
 	this.container.style.background = "url("+this.imageNames[this.currentImageIndex]+")";
 }
 
-// Show the next image.
+// Turn the carousel forwards.
 Carousel.prototype.forwards = function () {
 	this.currentImageIndex++;
 	if (this.currentImageIndex > this.numberOfImages - 1) this.currentImageIndex = 0;
@@ -31,7 +31,7 @@ Carousel.prototype.forwards = function () {
 	this.showImage();
 }
 
-// Show the previous image.
+// Turn the carousel backwards.
 Carousel.prototype.backwards = function () {
 	this.currentImageIndex--
 	if (this.currentImageIndex < 0) this.currentImageIndex = this.numberOfImages - 1;

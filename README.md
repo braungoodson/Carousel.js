@@ -30,3 +30,9 @@ MyCarousel.showImage();
 MyCarousel.forwards();
 MyCarousel.backwards();
 </pre>
+
+Caveats
+=======
+
+ * Must instantiate your carousel object after the desired container element is registered with the dom.
+ * Must define a style for the container element, there is no default.

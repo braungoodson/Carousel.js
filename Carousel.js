@@ -3,7 +3,12 @@
 * 	Author: Braun Goodson <braungoodson@gmail.com>
 */
 
-/* Main object.
+/* 
+*	Main object.
+*
+*	Caveats
+*	 - Must instantiate your carousel object after the desired container element is registered with the dom.
+*	 - Must define a style for the container element, there is no default.
 */
 var Carousel = function (imageNames,container) {
 	this.imageNames = imageNames;

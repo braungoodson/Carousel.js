@@ -1,0 +1,22 @@
+<!doctype html><html>
+<style>
+div#MyCarousel {
+	width:400px;
+	height:225px;
+	border:1px solid black;
+}
+</style>
+<script src="../Carousel.js"></script>
+<body>
+	<div id="MyCarousel"></div>
+	<script>
+		var MyCarousel = new Carousel(
+			["image000.png","image001.png","image002.png","image003.png"],
+			document.getElementById("MyCarousel")
+		);
+		MyCarousel.showImage();
+	</script>
+	<input type="button" onclick="javascript:MyCarousel.forwards();" value="forwards"/>
+	<input type="button" onclick="javascript:MyCarousel.backwards();" value="backwards"/>
+</body>
+</html>

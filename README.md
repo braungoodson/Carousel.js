@@ -1,4 +1,4 @@
-Carouseljs
+Carousel.js
 =======
 
 A JavaScript framework for image slideshows.

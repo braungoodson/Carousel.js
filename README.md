@@ -1,7 +1,7 @@
 Carouseljs
 =======
 
-A JavaScript library for image slideshows.
+A JavaScript framework for image slideshows.
 
 Features
 =======

@@ -32,7 +32,7 @@ Carousel.prototype.showImage = function () {
 Carousel.prototype.forwards = function () {
 	this.currentImageIndex++;
 	if (this.currentImageIndex > this.numberOfImages - 1) this.currentImageIndex = 0;
-	if (!this.numberOfImages) reCarousel;
+	if (!this.numberOfImages) return;
 	this.showImage();
 }
 
@@ -40,6 +40,6 @@ Carousel.prototype.forwards = function () {
 Carousel.prototype.backwards = function () {
 	this.currentImageIndex--
 	if (this.currentImageIndex < 0) this.currentImageIndex = this.numberOfImages - 1;
-	if (!this.numberOfImages) reCarousel;
+	if (!this.numberOfImages) return;
 	this.showImage();
 }
